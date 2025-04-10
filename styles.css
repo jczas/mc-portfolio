@@ -1,0 +1,470 @@
+/* Global styles and resets */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: white;
+  font-family: "Epilogue", sans-serif;
+  color: #2d2d2d;
+  margin: 0; /* Remove default body margin */
+  line-height: 1.6; /* Default line height */
+}
+
+/* From original <style> tag */
+.container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc; /* Optional: for visualization */
+}
+
+/* Layout Wrappers */
+.main-container {
+  width: 1280px; /* Fixed width */
+  height: 1055px; /* Fixed height - likely needs adjustment for content */
+  position: relative; /* Needed for absolutely positioned footer elements */
+  background: white;
+  margin: 0 auto; /* Center the container */
+}
+
+.page-wrapper {
+  /* Removed width/height here as main-container handles it */
+  /* Removed position: absolute as it's not needed for normal flow */
+  /* background: white; Already set on body/main-container */
+  display: flex; /* Changed from inline-flex */
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  /* Removed height: 7448px; Let content determine height */
+}
+
+/* Header */
+.header-nav {
+  align-self: stretch;
+  padding: 24px 42px;
+  background: white;
+  display: flex; /* Changed from inline-flex */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  align-content: center; /* Align wrapped items */
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff; /* Ensure the background isn't transparent */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #2d2d2d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+  cursor: pointer; /* Add pointer for links */
+}
+.nav-item:hover {
+  opacity: 0.7; /* Simple hover effect */
+}
+
+/* Hero Section */
+.hero-section {
+  align-self: stretch;
+  padding: 96px 24px 42px 24px;
+  background: white;
+  display: flex; /* Changed from inline-flex */
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+  flex-wrap: wrap; /* Allow wrapping */
+  align-content: center;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.hero-text-content {
+  flex: 1 1 0; /* Allow flexible width */
+  height: auto; /* Adjust height automatically */
+  max-width: 620px;
+  min-width: 320px;
+  display: flex; /* Changed from inline-flex */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.hero-text-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hero-name {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+.hero-title {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #2d2d2d;
+  font-size: 52px;
+  font-weight: 600;
+  word-wrap: break-word;
+  line-height: 1.2; /* Adjust line height */
+}
+
+.hero-description {
+  align-self: stretch;
+  color: #2d2d2d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+.hero-image-container {
+  width: 480px;
+  height: 360px;
+  position: relative;
+  background: black;
+  overflow: hidden;
+}
+
+.hero-shape {
+  /* Base class for shapes */
+  position: absolute;
+}
+.hero-shape.shape-1 {
+  width: 218px;
+  height: 223px;
+  left: 0px;
+  top: 137px;
+  background: linear-gradient(
+    180deg,
+    #560618 0%,
+    rgba(188, 13.12, 52.47, 0.75) 100%
+  );
+}
+.hero-shape.shape-2 {
+  width: 366px;
+  height: 106px;
+  left: 114px;
+  top: 254px;
+  background: linear-gradient(90deg, #1c1e11 0%, #7b844b 100%);
+  border-top-left-radius: 50px;
+}
+.hero-img-placeholder {
+  width: 262px;
+  height: 254px;
+  left: 218px;
+  top: 0px;
+  position: absolute;
+}
+.hero-shape.shape-3 {
+  width: 282px;
+  height: 137px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #5e6b46 0%, #b8d189 100%);
+  border-bottom-right-radius: 50px;
+}
+
+/* Services Section */
+.services-section {
+  align-self: stretch;
+  /* height: 450px; Removed fixed height */
+  padding: 42px 24px;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 42px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.services-grid {
+  align-self: stretch;
+  /* height: 363px; Removed fixed height */
+  display: flex; /* Changed from inline-flex */
+  justify-content: flex-start; /* Changed to space-around or center for better spacing */
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap; /* Allow wrapping */
+  align-content: flex-start;
+}
+
+.service-item {
+  width: 394.67px; /* Consider using flex-basis or percentages for responsiveness */
+  min-width: 320px;
+  padding: 64px 42px;
+  background: white;
+  display: flex; /* Changed from inline-flex */
+  flex-direction: column;
+  justify-content: flex-start; /* Or center */
+  align-items: center;
+  gap: 42px;
+  flex-grow: 1; /* Allow items to grow */
+}
+
+.service-item-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Changed to center align text */
+  gap: 12px;
+  text-align: center; /* Center align text */
+}
+
+.service-title {
+  align-self: stretch;
+  height: 42px; /* Maybe remove fixed height */
+  color: #2d2d2d;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 42px;
+  word-wrap: break-word;
+}
+
+.service-description {
+  align-self: stretch;
+  color: #2d2d2d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+/* Portfolio/Work Section */
+.portfolio-section {
+  align-self: stretch;
+  /* height: 1013px; Remove fixed height */
+  padding: 42px 24px;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 42px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.section-title {
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  word-wrap: break-word;
+  margin: 0 0 42px 0; /* Add margin */
+}
+
+.portfolio-grid {
+  align-self: stretch;
+  display: flex; /* Changed from inline-flex */
+  justify-content: flex-start; /* Consider space-around or center */
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.portfolio-item {
+  flex: 1 1 0; /* Flex properties */
+  min-width: 320px; /* Minimum width before wrapping */
+  display: flex; /* Changed from inline-flex */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 395px; /* Max width based on image size */
+}
+
+.portfolio-image {
+  align-self: stretch;
+  height: 330px;
+  object-fit: cover; /* Ensure images cover the area */
+  background-color: #eee; /* Placeholder background */
+}
+
+.portfolio-text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.portfolio-title {
+  align-self: stretch;
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+.portfolio-role {
+  align-self: stretch;
+  color: #2d2d2d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+/* Certificates Section */
+.certificates-section {
+  align-self: stretch;
+  /* height: 1560px; Remove fixed height */
+  position: relative; /* Keep for absolute positioning inside */
+  background: white;
+  overflow: hidden;
+  padding: 42px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.certificates-grid-wrapper {
+  /* width: 1232px; Let it be flexible */
+  /* height: 1392px; Remove fixed height */
+  /* position: absolute; Not needed for flow layout */
+  /* left: 24px; top: 126px; Not needed */
+  width: 100%;
+  max-width: 1232px; /* Max width from original */
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(320px, 1fr)
+  ); /* Responsive grid */
+  gap: 24px; /* Gap between items */
+}
+
+.certificate-item {
+  /* width: 395px; Height: 330px; Let grid handle size */
+  /* position: absolute; Not needed */
+  overflow: hidden;
+  outline: 1px black solid;
+  outline-offset: -1px;
+  background: white;
+  display: flex; /* Center image */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box;
+  min-height: 330px; /* Minimum height */
+}
+
+.certificate-item img {
+  /* Removed absolute positioning */
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure whole image is visible */
+  border-radius: 6px;
+}
+
+/* CSR Section (reuses portfolio styles) */
+.csr-section {
+  padding-bottom: 84px; /* Add more padding at the bottom */
+}
+
+/* Footer */
+.footer-contact {
+  width: 100%; /* Take full width */
+  position: relative; /* Use relative for positioning inside */
+  padding: 42px 24px; /* Add padding */
+  box-sizing: border-box;
+  text-align: center; /* Center title */
+  background: white; /* Ensure background */
+  margin-top: auto; /* Push to bottom if page-wrapper uses flex */
+}
+
+.footer-title {
+  color: #2d2d2d;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  word-wrap: break-word;
+  margin-bottom: 42px; /* Space below title */
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center; /* Center items */
+  align-items: center;
+  gap: 40px; /* Space between items */
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+.contact-icon-wrapper {
+  display: flex; /* Ensure SVG aligns well */
+  align-items: center;
+}
+
+.contact-text {
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  word-wrap: break-word;
+  line-height: 1.5; /* Adjust line height */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* Removed fixed height/width */
+}
