@@ -19,27 +19,25 @@ body {
 
 /* Layout Wrappers */
 .main-container {
-  width: 1280px; /* Fixed width */
-  height: 1055px; /* Fixed height - likely needs adjustment for content */
-  position: relative; /* Needed for absolutely positioned footer elements */
+  max-width: 1280px; /* Changed from fixed width to max-width */
+  min-width: 648px; /* Minimum width for smaller screens */
+  width: 100%;
+  position: relative;
   background: white;
   margin: 0 auto; /* Center the container */
+  height: auto; /* Let height adjust to content */
 }
 
 .page-wrapper {
-  /* Removed width/height here as main-container handles it */
-  /* Removed position: absolute as it's not needed for normal flow */
-  /* background: white; Already set on body/main-container */
-  display: flex; /* Changed from inline-flex */
+  display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  /* Removed height: 7448px; Let content determine height */
+  align-items: center;
 }
 
 /* Header */
 .header-nav {
   align-self: stretch;
-  padding: 24px 42px;
+  padding: 24px 24px;
   background: white;
   display: flex; /* Changed from inline-flex */
   justify-content: space-between;
@@ -108,8 +106,7 @@ body {
 .hero-text-content {
   flex: 1 1 0; /* Allow flexible width */
   height: auto; /* Adjust height automatically */
-  max-width: 620px;
-  min-width: 320px;
+  max-width: 600px;
   display: flex; /* Changed from inline-flex */
   flex-direction: column;
   justify-content: flex-start;
@@ -224,55 +221,24 @@ body {
 
 .services-grid {
   align-self: stretch;
-  /* height: 363px; Removed fixed height */
-  display: flex; /* Changed from inline-flex */
-  justify-content: flex-start; /* Changed to space-around or center for better spacing */
-  align-items: flex-start;
+  display: flex;
+  justify-content: center; /* Center items */
+  align-items: center;
   gap: 24px;
-  flex-wrap: wrap; /* Allow wrapping */
-  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .service-item {
-  width: 394.67px; /* Consider using flex-basis or percentages for responsiveness */
+  width: 100%;
+  max-width: 394px;
   min-width: 320px;
   padding: 64px 42px;
   background: white;
-  display: flex; /* Changed from inline-flex */
-  flex-direction: column;
-  justify-content: flex-start; /* Or center */
-  align-items: center;
-  gap: 42px;
-  flex-grow: 1; /* Allow items to grow */
-}
-
-.service-item-content {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start; /* Changed to center align text */
-  gap: 12px;
-  text-align: center; /* Center align text */
-}
-
-.service-title {
-  align-self: stretch;
-  height: 42px; /* Maybe remove fixed height */
-  color: #2d2d2d;
-  font-size: 27px;
-  font-weight: 600;
-  line-height: 42px;
-  word-wrap: break-word;
-}
-
-.service-description {
-  align-self: stretch;
-  color: #2d2d2d;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 27px;
-  word-wrap: break-word;
+  justify-content: center; /* Center content */
+  align-items: center;
+  gap: 42px;
 }
 
 /* Portfolio/Work Section */
@@ -303,57 +269,22 @@ body {
 
 .portfolio-grid {
   align-self: stretch;
-  display: flex; /* Changed from inline-flex */
-  justify-content: flex-start; /* Consider space-around or center */
-  align-items: flex-start;
+  display: flex;
+  justify-content: center; /* Center items */
+  align-items: center;
   gap: 24px;
   flex-wrap: wrap;
-  align-content: flex-start;
 }
 
 .portfolio-item {
-  flex: 1 1 0; /* Flex properties */
-  min-width: 320px; /* Minimum width before wrapping */
-  display: flex; /* Changed from inline-flex */
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 24px;
-  max-width: 395px; /* Max width based on image size */
-}
-
-.portfolio-image {
-  align-self: stretch;
-  height: 330px;
-  object-fit: cover; /* Ensure images cover the area */
-  background-color: #eee; /* Placeholder background */
-}
-
-.portfolio-text {
-  align-self: stretch;
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 395px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.portfolio-title {
-  align-self: stretch;
-  color: #2d2d2d;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  word-wrap: break-word;
-}
-
-.portfolio-role {
-  align-self: stretch;
-  color: #2d2d2d;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 27px;
-  word-wrap: break-word;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 /* Certificates Section */
@@ -382,16 +313,13 @@ body {
 
 .certificates-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(320px, 1fr)
-  ); /* Responsive grid */
-  gap: 24px; /* Gap between items */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  width: 100%;
 }
 
 .certificate-item {
-  /* width: 395px; Height: 330px; Let grid handle size */
-  /* position: absolute; Not needed */
   overflow: hidden;
   outline: 1px black solid;
   outline-offset: -1px;
@@ -401,7 +329,9 @@ body {
   align-items: center;
   padding: 20px; /* Add some padding */
   box-sizing: border-box;
-  min-height: 330px; /* Minimum height */
+  min-height: 330px;
+  width: 100%;
+  max-width: 395px;
 }
 
 .certificate-item img {
@@ -467,4 +397,30 @@ body {
   justify-content: center;
   flex-direction: column;
   /* Removed fixed height/width */
+}
+
+/* Responsive breakpoint styles */
+@media (max-width: 1280px) {
+  .services-grid,
+  .portfolio-grid,
+  .certificates-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr; /* Change to single column */
+  }
+  
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 42px 24px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
