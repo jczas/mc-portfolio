@@ -94,7 +94,7 @@ body {
   padding: 96px 24px 42px 24px;
   background: white;
   display: flex; /* Changed from inline-flex */
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 68px;
   flex-wrap: wrap; /* Allow wrapping */
