@@ -1,23 +1,15 @@
 /* Responsive breakpoint styles */
 
-
-
-/* Medium-sized devices (tablets, smaller laptops) */
-@media (max-width: 1299px) {
-
+/* Large screens (Desktop) */
+@media (max-width: 1300px) {
   .hero-section {
     flex-direction: column;
     padding: 42px 24px;
   }
-
+  
   .hero-title {
     font-size: 48px;
   }
-
-  .hero-text-content {
-    max-width: 564px;
-  }
-
 
   /* Two-column layout for medium screens */
   .portfolio-grid {
@@ -25,7 +17,7 @@
     max-width: 880px;
     margin: 0 auto;
   }
-
+  
   .hero-grid {
     grid-template-columns: 1fr;
     max-width: 564px;
@@ -34,13 +26,11 @@
 }
 
 /* Small tablets */
-@media (max-width: 879px) {
+@media (max-width: 880px) {
   .main-container {
-    min-width: 550px;
+    min-width: 680px;
   }
 
-  /* Stack grid items vertically */
-  .portfolio-grid,
   .portfolio-grid {
     flex-direction: column;
     align-items: center;
@@ -50,18 +40,10 @@
   .portfolio-grid,
   .hero-grid {
     grid-template-columns: 1fr;
-    max-width: 564px;
-    margin: 0 auto;
   }
   
-
-  /* Stack contact info */
   .contact-info {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .hero-title {
-    font-size: 36px;
   }
 }

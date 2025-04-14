@@ -27,7 +27,6 @@
 .hero-name {
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
 }
 
 .hero-title {
@@ -38,7 +37,6 @@
 
 .hero-description {
   font-size: 17px;
-  line-height: 27px;
   text-align: justify;
 }
 
@@ -59,11 +57,7 @@
   height: 223px;
   left: 0;
   top: 137px;
-  background: linear-gradient(
-    180deg,
-    #560618 0%,
-    rgba(188, 13, 52, 0.75) 100%
-  );
+  background: linear-gradient(180deg, #560618 0%, rgba(188, 13, 52, 0.75) 100%);
 }
 
 .hero-shape.shape-2 {

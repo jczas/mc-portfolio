@@ -3,13 +3,11 @@
   width: 100%;
   padding: 42px 24px;
   text-align: center;
-  background: white;
   margin-top: auto;
   box-sizing: border-box;
 }
 
 .footer-title {
-  color: #2d2d2d;
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 42px;
@@ -31,7 +29,6 @@
 }
 
 .contact-text {
-  color: black;
   font-size: 17px;
   line-height: 1.5;
 }

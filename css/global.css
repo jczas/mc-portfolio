@@ -1,8 +1,7 @@
 /* Global styles and resets */
 html {
   scroll-behavior: smooth;
-  /* Add scroll padding to prevent section titles from being hidden under sticky header */
-  scroll-padding-top: 80px; /* Adjust this value based on your header height */
+  scroll-padding-top: 80px; /* Keep this to fix section header overlap issue */
 }
 
 body {
@@ -10,7 +9,6 @@ body {
   color: #2d2d2d;
   margin: 0;
   line-height: 1.6;
-  background: white;
 }
 
 /* Layout Wrappers */
@@ -19,6 +17,7 @@ body {
   min-width: 650px;
   width: 100%;
   margin: 0 auto;
+  background: white;
 }
 
 .page-wrapper {
