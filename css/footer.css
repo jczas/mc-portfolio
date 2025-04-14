@@ -1,0 +1,49 @@
+/* Footer styles */
+.footer-contact {
+  width: 100%;
+  position: relative;
+  padding: 42px 24px;
+  box-sizing: border-box;
+  text-align: center;
+  background: white;
+  margin-top: auto;
+}
+
+.footer-title {
+  color: #2d2d2d;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  word-wrap: break-word;
+  margin-bottom: 42px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-text {
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  word-wrap: break-word;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

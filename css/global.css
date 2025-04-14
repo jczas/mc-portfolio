@@ -1,0 +1,46 @@
+/* Global styles and resets */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+  font-family: "Epilogue", sans-serif;
+  color: #2d2d2d;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+/* Layout Wrappers */
+.main-container {
+  max-width: 1280px;
+  min-width: 648px;
+  width: 100%;
+  position: relative;
+  background: white;
+  margin: 0 auto;
+  height: auto;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Common section styles */
+.section-title {
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  word-wrap: break-word;
+  margin: 0 0 42px 0;
+}

@@ -1,0 +1,25 @@
+/* Responsive breakpoint styles */
+@media (max-width: 1280px) {
+  .services-grid,
+  .portfolio-grid,
+  .certificates-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 42px 24px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

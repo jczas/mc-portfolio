@@ -1,0 +1,116 @@
+/* Hero Section styles */
+.hero-section {
+  align-self: stretch;
+  padding: 96px 24px 42px 24px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-text-content {
+  flex: 1 1 0;
+  height: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.hero-text-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hero-name {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+.hero-title {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #2d2d2d;
+  font-size: 52px;
+  font-weight: 600;
+  word-wrap: break-word;
+  line-height: 1.2;
+}
+
+.hero-description {
+  align-self: stretch;
+  color: #2d2d2d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+.hero-image-container {
+  width: 480px;
+  height: 360px;
+  position: relative;
+  background: black;
+  overflow: hidden;
+}
+
+.hero-shape {
+  position: absolute;
+}
+
+.hero-shape.shape-1 {
+  width: 218px;
+  height: 223px;
+  left: 0px;
+  top: 137px;
+  background: linear-gradient(
+    180deg,
+    #560618 0%,
+    rgba(188, 13.12, 52.47, 0.75) 100%
+  );
+}
+
+.hero-shape.shape-2 {
+  width: 366px;
+  height: 106px;
+  left: 114px;
+  top: 254px;
+  background: linear-gradient(90deg, #1c1e11 0%, #7b844b 100%);
+  border-top-left-radius: 50px;
+}
+
+.hero-img-placeholder {
+  width: 262px;
+  height: 254px;
+  left: 218px;
+  top: 0px;
+  position: absolute;
+}
+
+.hero-shape.shape-3 {
+  width: 282px;
+  height: 137px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #5e6b46 0%, #b8d189 100%);
+  border-bottom-right-radius: 50px;
+}
