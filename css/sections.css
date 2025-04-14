@@ -1,20 +1,19 @@
-/* Services Section */
-.services-section {
-  align-self: stretch;
+/* Common section styles */
+.services-section,
+.portfolio-section {
   padding: 42px 24px;
-  background: white;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 42px;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
 }
 
-.services-grid {
-  align-self: stretch;
+/* Grid layouts */
+.services-grid,
+.portfolio-grid {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,55 +21,30 @@
   flex-wrap: wrap;
 }
 
+/* Service items */
 .service-item {
-  width: 100%;
   max-width: 394px;
   min-width: 320px;
-  padding: 64px 42px;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 42px;
-}
-
-/* Portfolio/Work Section */
-.portfolio-section {
-  align-self: stretch;
-  padding: 42px 24px;
-  background: white;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 42px;
   width: 100%;
-  box-sizing: border-box;
-}
-
-.portfolio-grid {
-  align-self: stretch;
+  padding: 64px 42px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
+  gap: 42px;
 }
 
+/* Portfolio items */
 .portfolio-item {
-  flex: 1 1 0;
+  flex: 1;
   min-width: 320px;
   max-width: 395px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 24px;
 }
 
-/* CSR Section (reuses portfolio styles) */
+/* CSR section modifier */
 .csr-section {
   padding-bottom: 84px;
 }

@@ -1,25 +1,72 @@
 /* Responsive breakpoint styles */
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
+  /* Stack grid items vertically */
   .services-grid,
-  .portfolio-grid,
-  .certificates-grid {
+  .portfolio-grid {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Single column for certificates */
   .certificates-grid {
     grid-template-columns: 1fr;
+    max-width: 564px;
+    margin: 0 auto;
   }
   
+  /* Reorganize hero section */
   .hero-section {
     flex-direction: column;
-    align-items: center;
     padding: 42px 24px;
   }
   
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-text-content {
+    max-width: 564px;
+  }
+  
+  .hero-image-container {
+    margin: 0 auto;
+  }
+  
+  /* Stack contact info vertically */
   .contact-info {
     flex-direction: column;
-    align-items: center;
     gap: 20px;
+  }
+  
+  /* Adjust section padding */
+  .services-section,
+  .portfolio-section,
+  .certificates-section {
+    padding: 32px 16px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 660px) {
+  .main-container {
+    min-width: 320px;
+  }
+  
+  .header-nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .hero-title {
+    font-size: 36px;
   }
 }
