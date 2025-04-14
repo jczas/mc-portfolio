@@ -1,6 +1,8 @@
 /* Global styles and resets */
 html {
   scroll-behavior: smooth;
+  /* Add scroll padding to prevent section titles from being hidden under sticky header */
+  scroll-padding-top: 80px; /* Adjust this value based on your header height */
 }
 
 body {
