@@ -15,7 +15,8 @@
   gap: 42px;
 }
 
-.portfolio-grid {
+.portfolio-grid,
+.hero-grid {
   width: 100%;
   display: flex;
   justify-content: center;

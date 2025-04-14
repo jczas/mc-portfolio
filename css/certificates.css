@@ -1,7 +1,6 @@
 /* Certificates Section */
 
 .certificate-item {
-  background: #560618;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +9,8 @@
   max-width: 395px;
   width: 100%;
   box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .certificate-item img {
