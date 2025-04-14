@@ -1,21 +1,4 @@
 /* Certificates Section */
-.certificates-section {
-  padding: 42px 24px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.certificates-grid-wrapper {
-  max-width: 1232px;
-  margin: 0 auto;
-}
-
-.certificates-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  justify-items: center;
-}
 
 .certificate-item {
   background: #560618;
@@ -33,8 +16,4 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-}
-
-img {
-  outline: none;
 }

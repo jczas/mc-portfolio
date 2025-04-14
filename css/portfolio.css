@@ -1,5 +1,10 @@
-/* Common section styles */
-.services-section,
+
+.portfolio-title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
 .portfolio-section {
   padding: 42px 24px;
   width: 100%;
@@ -10,8 +15,6 @@
   gap: 42px;
 }
 
-/* Grid layouts */
-.services-grid,
 .portfolio-grid {
   width: 100%;
   display: flex;
@@ -21,30 +24,22 @@
   flex-wrap: wrap;
 }
 
-/* Service items */
-.service-item {
-  max-width: 394px;
-  min-width: 320px;
-  width: 100%;
-  padding: 64px 42px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 42px;
-}
-
 /* Portfolio items */
-.portfolio-item {
+.portfolio-item  {
   flex: 1;
   min-width: 320px;
   max-width: 395px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 12px;
 }
 
-/* CSR section modifier */
-.csr-section {
-  padding-bottom: 84px;
+.portfolio-item-title {
+  font-weight: 600;
+  text-align: center;
+}
+
+.portfolio-role {
+  text-align: center;
 }

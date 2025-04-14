@@ -11,19 +11,12 @@ body {
   background: white;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #ccc;
-}
-
 /* Layout Wrappers */
 .main-container {
-  max-width: 1280px;
-  min-width: 648px;
+  max-width: 1290px;
+  min-width: 650px;
   width: 100%;
   margin: 0 auto;
-  background: white;
 }
 
 .page-wrapper {
@@ -32,10 +25,3 @@ body {
   align-items: center;
 }
 
-/* Common section styles */
-.section-title {
-  font-size: 32px;
-  font-weight: 600;
-  margin: 0 0 42px 0;
-  text-align: center;
-}
