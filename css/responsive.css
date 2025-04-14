@@ -6,44 +6,16 @@
     flex-direction: column;
     padding: 42px 24px;
   }
-  
-  .hero-title {
-    font-size: 48px;
-  }
 
-  /* Two-column layout for medium screens */
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 880px;
-    margin: 0 auto;
-  }
-  
-  .hero-grid {
-    grid-template-columns: 1fr;
-    max-width: 564px;
-    margin: 0 auto;
-  }
+  .hero-title {font-size: 48px;}
+
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); max-width: 880px; margin: 0 auto; }
+  .hero-grid { grid-template-columns: 1fr; max-width: 564px; margin: 0 auto; }
 }
 
-/* Small tablets */
 @media (max-width: 880px) {
-  .main-container {
-    min-width: 680px;
-  }
-
-  .portfolio-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Single column for certificates */
-  .portfolio-grid,
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .contact-info {
-    flex-direction: column;
-    gap: 20px;
+  .portfolio-grid, .hero-grid { grid-template-columns: 1fr; }
+  .contact-info { flex-direction: column; gap: 20px; }
   }
 }
+

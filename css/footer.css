@@ -1,7 +1,6 @@
 /* Footer styles */
 .footer-contact {
   width: 100%;
-  padding: 42px 24px;
   text-align: center;
   margin-top: auto;
   box-sizing: border-box;
@@ -27,7 +26,6 @@
   align-items: center;
   gap: 10px;
 }
-
 .contact-text {
   font-size: 17px;
   line-height: 1.5;
