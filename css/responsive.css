@@ -1,19 +1,7 @@
 /* Responsive breakpoint styles */
-@media (max-width: 1300px) {
-  /* Stack grid items vertically */
-  .services-grid,
-  .portfolio-grid {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  /* Single column for certificates */
-  .certificates-grid {
-    grid-template-columns: 1fr;
-    max-width: 564px;
-    margin: 0 auto;
-  }
-  
+/* Large screens (Desktop) */
+@media (max-width: 1300px) {
   /* Reorganize hero section */
   .hero-section {
     flex-direction: column;
@@ -31,8 +19,6 @@
   .hero-image-container {
     margin: 0 auto;
   }
-  
-
 }
 
 /* Medium-sized devices (tablets, smaller laptops) */
@@ -63,30 +49,32 @@
   }
 }
 
-@media (min-width: 660px) and (max-width: 879px) {
+/* Small tablets */
+@media (max-width: 879px) {
+  .main-container {
+    min-width: 550px;
+  }
+  
+  /* Stack grid items vertically */
+  .services-grid,
+  .portfolio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  /* Single column for certificates */
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    max-width: 564px;
+    margin: 0 auto;
+  }
+  
+  /* Stack contact info */
   .contact-info {
     flex-direction: column;
     gap: 20px;
   }
-}
 
-/* Extra small devices */
-@media (max-width: 659px) {
-  .main-container {
-    min-width: 320px;
-  }
-  
-  .header-nav {
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .nav-links {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
   .section-title {
     font-size: 28px;
   }
@@ -94,5 +82,4 @@
   .hero-title {
     font-size: 36px;
   }
-
 }
