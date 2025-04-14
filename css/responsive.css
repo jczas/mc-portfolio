@@ -32,22 +32,47 @@
     margin: 0 auto;
   }
   
-  /* Stack contact info vertically */
+
+}
+
+/* Medium-sized devices (tablets, smaller laptops) */
+@media (min-width: 880px) and (max-width: 1299px) {
+  /* Two-column layout for medium screens */
+  .services-grid,
+  .portfolio-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-item,
+  .portfolio-item {
+    flex: 0 0 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+  
+  /* Two columns for certificates */
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .certificate-item {
+    min-height: 280px;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 879px) {
+
   .contact-info {
     flex-direction: column;
     gap: 20px;
   }
-  
-  /* Adjust section padding */
-  .services-section,
-  .portfolio-section,
-  .certificates-section {
-    padding: 32px 16px;
-  }
 }
 
 /* Extra small devices */
-@media (max-width: 660px) {
+@media (max-width: 659px) {
   .main-container {
     min-width: 320px;
   }
@@ -69,4 +94,5 @@
   .hero-title {
     font-size: 36px;
   }
+
 }
