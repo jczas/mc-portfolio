@@ -1,6 +1,4 @@
-/* Responsive breakpoint styles */
 
-/* Large screens (Desktop) */
 @media (max-width: 1300px) {
   .hero-section {
     flex-direction: column;

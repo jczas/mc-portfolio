@@ -1,7 +1,6 @@
-/* Global styles and resets */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Keep this to fix section header overlap issue */
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -11,7 +10,6 @@ body {
   line-height: 1.6;
 }
 
-/* Layout Wrappers */
 .main-container {
   max-width: 1290px;
   min-width: 650px;

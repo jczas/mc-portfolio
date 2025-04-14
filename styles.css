@@ -1,14 +1,7 @@
-/* Main stylesheet that imports all modular CSS files */
-
-/* Import global styles */
 @import 'css/global.css';
-
-/* Import component styles */
 @import 'css/header.css';
 @import 'css/hero.css';
 @import 'css/portfolio.css';
 @import 'css/certificates.css';
 @import 'css/footer.css';
-
-/* Import responsive styles */
 @import 'css/responsive.css';
