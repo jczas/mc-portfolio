@@ -36,7 +36,6 @@
   opacity: 0.7;
 }
 
-.nav-item a {
-  color: inherit;
+.nav-item a {  
   text-decoration: none;
 }

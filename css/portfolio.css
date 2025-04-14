@@ -27,7 +27,6 @@
 
 /* Portfolio items */
 .portfolio-item  {
-  flex: 1;
   min-width: 320px;
   max-width: 395px;
   display: flex;
